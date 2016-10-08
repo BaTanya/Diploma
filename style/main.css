@@ -1,0 +1,67 @@
+@import url(normalize.css);
+@import url(fonts.css);
+
+html{
+  font-family: MyriadPro, Arial, sans-serif;
+}
+body{
+  background-color: #161616;
+}
+h1,
+h2,
+h3{
+  line-height: 1;
+}
+.p-50{
+  padding: 0 50px;
+}
+.fluid{
+  width: 100%;
+}
+.wrap{
+  max-width: 1198px;
+  margin: auto;
+}
+.orange::first-letter{
+  color: #ffc600;
+}
+.text-white{
+  color: #fff;
+}
+.text-black{
+  color: #000;
+}
+.text-orange{
+  color: #ffc600;
+}
+.background-one{
+  background-image: url(../img/backround-2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+.background-one a{
+  font-size: 18px;
+  color: #ffc600;
+  text-decoration: none;
+}
+.background-one a:hover{
+  color: inherit;
+}
+.main > h1{
+  font-size: 202px;
+  margin: 0;
+}
+.main{
+  font-size: 18px;
+  padding: 110px 35px 50px;
+}
+.main > p{
+  margin-top: 0;
+}
+.we-create{
+
+}
+.we-create> h2{
+  font-weight: 700;
+  font-size: 60px;
+}
