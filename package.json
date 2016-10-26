@@ -1,0 +1,29 @@
+{
+  "name": "diploma",
+  "version": "1.0.0",
+  "description": "tanya's diploma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaTanya/Diploma.git"
+  },
+  "keywords": [
+    "tanya",
+    "diploma",
+    "pain",
+    "torment"
+  ],
+  "author": "tanya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaTanya/Diploma/issues"
+  },
+  "homepage": "https://github.com/BaTanya/Diploma#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  }
+}
