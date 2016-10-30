@@ -7,3 +7,11 @@ gulp.task('css-concat', function(){
 	.pipe(concat('style.css'))
 	.pipe(gulp.dest('./dist/'));
 });
+
+var gulp = require('gulp'),
+sass = require('gulp-sass');
+
+gulp.task('sass', function(){
+	return gulp.src(['./sass/main.sass'])
+	.pipe(gulp.dest('./dist'));
+});
