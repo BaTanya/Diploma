@@ -1,6 +1,3 @@
-/* @import url(normalize.css); */
-/* @import url(fonts.css); */
-
 html{
   font-family: MyriadPro, Arial, sans-serif;
 }
@@ -63,7 +60,11 @@ u{
   margin: 0 2%;
 }
 .w-25{
-  width: 21px;
+  width: 21%;
+  margin: 0 2%;
+}
+.w-67{
+  width: 63%;
   margin: 0 2%;
 }
 .mb-55{
@@ -89,6 +90,9 @@ u{
 
 .background-white{
   background-color: #fff;
+}
+.background-blue{
+  background-color: #2046b3;
 }
 .background-one{
   background-image: url(../img/backround-2.jpg);
@@ -272,7 +276,91 @@ margin-top: 50px;
   max-width: 180px;
 }
 
-
+.background-black{
+  background-color: #000;
+  padding-bottom: 100px;
+}
+.background-black > div:first-of-type{
+  padding-left: 70px;
+}
+.background-black h2{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.photo-john{
+  text-align: center;
+  /*padding-right: 160px;*/
+}
+.photo-john::before{
+  content: "";
+  border: 2px solid #FFa800;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 15px 10px;
+  height: 120px;
+  width: 115px;
+  box-sizing: border-box;
+  background: url(../img/john.jpg) #e8e8e8 no-repeat 50%;
+}
+.contact{
+  padding: 0;
+}
+ #map{
+   height: 685px;
+   width: 40%;
+ }
+#map + .background-blue{
+  width: 60%;
+  height: 685px;
+}
+.feedback{
+  max-width: 410px;
+  text-align: justify;
+}
+.feedback input,
+.feedback textarea{
+  box-sizing: border-box;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  padding: .5em 1em;
+  margin: .5em 0;
+}
+.feedback input:focus,
+.feedback textarea:focus
+{
+  outline: none;
+  border: 2px solid #ffc600;
+}
+.feedback [name=name]{
+  width: 100%;
+}
+.feedback [name=mobile]{
+  width: 40%;
+}
+.feedback [name=email]{
+  width: 50%;
+}
+.feedback [name=message]{
+  width: 100%;
+  height: 5em;
+}
+.feedback [type=submit]{
+padding: .5em 2.5em;
+}
+.feedback [type=submit]:focus,
+.feedback [type=submit]:hover{
+background-color: #ffc600;
+color: #000;
+border-color: #ffc600;
+}
+.background-blue p{
+  padding: 100px 0 50px;
+}
+.feedback ::-webkit-input-placeholder {color: #fff;}
+.feedback ::-moz-placeholder          {color: #fff;}
+.feedback :-moz-placeholder           {color: #fff;}
+.feedback :-ms-input-placeholder      {color: #fff;}
 @media screen and (max-width: 1220px) {
   .project {
     max-width: 600px;

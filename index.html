@@ -4,7 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Diploma</title>
-	<link rel="stylesheet" href="dist/style.css" media="screen" title="no title">
+	<!-- For gulp distribution -->
+	<!-- <link rel="stylesheet" href="dist/style.css" media="screen" title="no title"> -->
+
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/fonts.css">
+	<link rel="stylesheet" href="style/main.css">
 </head>
 <body>
 	<header class="fluid text-white background-one">
@@ -229,20 +234,66 @@
 			</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo sit, quod numquam sequi consectetur, pariatur deleniti.</p>
 		</div>
-		<div class="photo-john w-33">
+		<div class="photo-john w-25">
 			<p>
-					<strong>John Doe</strong>
-					<br>
-					<em>Co Founder/CEO</em>
-				</p>
+				<strong>John Doe</strong>
+				<br>
+				<em>Co Founder/CEO</em>
+			</p>
+		</div>
+	</section>
+
+	<section class="wrap row contact">
+		<div id="map"></div>
+		<div class="text-white p-50 background-blue">
+			<h2><u><b class="text-orange">C</b>ontact <b>U</b>s&nbsp;&nbsp;&nbsp;</u></h2>
+			<form class="feedback">
+				<input type="text" name="name" placeholder="Your Name">
+				<input type="text" name="mobile" placeholder="Mobile">
+				<input type="email" name="email" placeholder="Email">
+				<textarea name="message" placeholder="Your Message"></textarea>
+				<input type="submit" value="SEND">
+			</form>
+			<p>Location Map</p>
+			<table>
+				<tr>
+					<th>
+						Adress
+					</th>
+					<td>
+						Hill Mist garden, Pune, 411 048. India
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Phone
+					</th>
+					<td>
+						<a href="tel:+380632216480">+38 (063) 221 64 80</a>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Email
+					</th>
+					<td>
+						<a href="mailto:baben.tanya@gmail.com">baben.tanya@gmail.com</a>
+					</td>
+				</tr>
+			</table>
+
 		</div>
 	</section>
 
 
 
 
-
-
 	<section style="height:500px; background-color:red"></section>
+
+	<script src="js/map.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB35oInhzGj_4kqeMdmg95iLWF6QmTDEWI&callback=initMap">
+	</script>
+
 </body>
 </html>
