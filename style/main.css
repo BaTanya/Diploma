@@ -141,9 +141,10 @@ u{
   display: block;
   text-transform: capitalize;
   margin-right: 20px;
+  border-bottom:  2px solid transparent;
 }
 .nav a:hover{
-  border-bottom: 2px solid #ffc600;
+  border-bottom-color: #ffc600;
 }
 .about{
 border-right: 2px solid #595959;
@@ -209,8 +210,8 @@ margin-top: 50px;
     position: absolute;
     left:25%;
 }
-.menu a:hover:after,
-.menu a:focus:after {
+.menu a:hover::after,
+.menu a:focus::after {
     width: 50%;
     border: none;
 }
@@ -220,6 +221,8 @@ margin-top: 50px;
 }
 .project img{
   float: left;
+  max-width: 300px;
+
 }
 .img-text{
   padding: 0 80px;
@@ -301,6 +304,37 @@ margin-top: 50px;
   width: 115px;
   box-sizing: border-box;
   background: url(../img/john.jpg) #e8e8e8 no-repeat 50%;
+}
+.menu-blogs{
+  padding-left: 90px;
+  margin-top: 50px;
+}
+.menu-blogs > li{
+list-style: none;
+}
+.menu-blogs a{
+  display: block;
+  font-size: 18px;
+  color: #000;
+  margin: 1em 0;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.menu-blogs a:hover{
+  color: #ffc600;
+}
+.date p:first-of-type{
+  font-size: 18px;
+}
+.date p:last-of-type{
+  font-size: 12px;
+}
+.date h5{
+  font-size: 15px;
+  margin: 1em 0;
+}
+.date img{
+  max-width: 180px;
 }
 .contact{
   padding: 0;
