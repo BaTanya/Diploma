@@ -268,21 +268,12 @@ u{
 .joker{
   margin-left: 35%;
 }
+.joker > div{
+  padding-right: 50px;
+}
 .joker p{
   font-size: 11px;
-  padding-right: 100px;
 }
-#our-team{
-  padding-top: 50px;
-}
-#our-team h2{
-  float: left;
-}
-
-#our-team .row{
-  margin-left: 25%;
-}
-
 .photo{
   float:left;
   margin-right: 15px;
@@ -353,7 +344,7 @@ u{
 }
 .date img{
   display: block;
-  max-width: 180px;
+  max-width: 100%;
   margin: 5px auto;
 }
 .date{
@@ -527,7 +518,6 @@ footer h2{
 
 
 
-
 @media screen and (max-width: 1220px) {
   .project {
     max-width: 600px;
@@ -536,43 +526,134 @@ footer h2{
   .img-text{
     padding: 0;
   }
-  @media screen and (max-width: 720px) {
-    .left,
-    .right{
-      position: static;
-    }
-    .img-text > .row:not(:first-child){
-      margin-top: 0;
-    }
-    .project {
-      max-width: 300px;
-    }
-    .row > .w-50{
-      float: none;
-      width: 100%;
-      margin: 0;
-    }
-    .main h1{
-      font-size: 85px;
-    }
-    .about{
-      border: none;
-    }
+}
+
+@media screen and (max-width: 1200px){
+  .photo-row{
+    max-width: 390px;
+    margin: auto;
   }
-  @media screen and (max-width: 330px){
-    .main h1{
-      font-size: 65px;
-    }
-    .about > h2:last-of-type{
-      font-size: 50px;
-    }
-    .row > .w-33{
-      float: none;
-      width: 100%;
-      margin: 0;
-    }
-    .p-50{
-      padding: 1px 10px 50px;
-    }
+}
+
+@media screen and (max-width: 770px) {
+  .we-create{
+    background: linear-gradient(to bottom, rgba(0,0,0, .7), rgba(0,0,0, .7)), url(../img/backround-1.jpg);
+    background-position: 100%, 50% 0%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  .left,
+  .right{
+    position: static;
+  }
+  .img-text > .row:not(:first-child){
+    margin-top: 0;
+  }
+  .project {
+    max-width: 300px;
+  }
+  .row > .w-75,
+  .row > .w-67,
+  .row > .w-50,
+  .row > .w-33,
+  .row > .w-25,
+  #map,
+  #map + .background-blue
+  {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .contacts,
+  .feedback{
+    max-width: 100%;
+  }
+  #map{
+    height: 300px;
+  }
+  .main h1{
+    font-size: 85px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .nav,
+  .menu,
+  .menu-blogs,
+  .footer-nav,
+  .main,
+  .date,
+  .social
+  {
+    text-align: center;
+  }
+  .menu a{
+    font-size: 18px;
+  }
+  .menu-blogs{
+    padding: 0;
+  }
+  .about{
+    border: none;
+  }
+  .joker{
+    margin-left: 0;
+  }
+  .joker > div{
+    padding: 0;
+  }
+  footer h1{
+    font-size: 65px;
+  }
+  footer h2{
+    font-size: 35px;
+  }
+  .footer-nav::after{
+    margin: 40px auto;
+  }
+  .social i{
+    line-height: 50px;
+    font-size: 30px;
+  }
+  .social a{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .nav > li{
+    display: block;
+  }
+  .photo-row{
+    max-width: 180px;
+  }
+  .nav a{
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    border-bottom: none;
+  }
+  .hidden-small{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 330px){
+  .main h1{
+    font-size: 65px;
+  }
+  .about > h2:last-of-type{
+    font-size: 50px;
+  }
+  .row > .w-33{
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .p-50{
+    padding: 1px 10px 50px;
   }
 }
